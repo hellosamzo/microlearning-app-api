@@ -1,10 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.use((req, res, next) => {
-    res.status(200).json({
-        url: 'https://en.wikipedia.org/wiki/Express.js'
-    });
-});
+const genreRoute = require('./api/routes/genres');
+
+app.use('/genres', genreRoute);
 
 module.exports = app;
