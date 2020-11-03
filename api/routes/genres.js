@@ -25,7 +25,19 @@ router.get('/:genreId', (req, res, next) => {
             message: 'passed an invalid ID'
         })
     }
-})
+});
+
+router.patch('/:genreId', (req, res, next) => {
+   res.status(200).json({
+       message: 'patched genre'
+   })
+});
+
+router.delete('/:genreId', (req, res, next) => {
+    res.status(200).json({
+        message: 'deleted genre'
+    })
+ });
 
 module.exports = router;
 
