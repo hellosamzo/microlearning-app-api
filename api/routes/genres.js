@@ -13,5 +13,19 @@ router.post('/', (req, res, next) => {
     });
 });
 
+router.get('/:genreId', (req, res, next) => {
+    const id = req.params.genreId;
+    if (id == '1') {
+        res.status(200).json({
+            message: 'passed in ID of 1',
+            id: id
+        });
+    } else {
+        res.status(200).json({
+            message: 'passed an invalid ID'
+        })
+    }
+})
+
 module.exports = router;
 
