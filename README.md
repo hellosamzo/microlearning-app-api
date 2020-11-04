@@ -1,3 +1,3 @@
 # microlearning-app-api
 
-REST API with Node.js to be used by my microlearning-app
+REST API with Express.js to be used by my microlearning-app
