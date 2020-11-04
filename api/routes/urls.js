@@ -13,14 +13,14 @@ router.post('/', (req, res, next) => {
     });
 });
 
-router.get('/:genreId', (req, res, next) => {
+router.get('/:urlId', (req, res, next) => {
         res.status(200).json({
             message: 'url details',
             urlId: req.params.urlId
         });
 });
 
-router.delete('/:genreId', (req, res, next) => {
+router.delete('/:urlId', (req, res, next) => {
     res.status(200).json({
         message: 'url deleted',
         urlId: req.params.urlId
